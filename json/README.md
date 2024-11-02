@@ -6,6 +6,8 @@ JSON
 
 Description
 A simple Django application for sending data to a JSON file.
+The json file is aleady hidden, you can still run the code to create an entirely different one.
+You can locate views.py to my you own changes 
 
 Installation
 1. Clone the repository
