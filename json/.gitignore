@@ -1,0 +1,6 @@
+john.json
+__pycache__/
+media/
+staticfiles/
+env/
+venv/
