@@ -8,7 +8,7 @@ Description
 A simple Django application for sending data to a JSON file.
 
 Installation
-1. Clone the repository: `git clone (link unavailable)
+1. Clone the repository
 2. Install dependencies: pip install -r requirements.txt
 3. Run migrations
 4. Start server
