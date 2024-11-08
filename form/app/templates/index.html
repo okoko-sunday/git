@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if messages %}
+    {% for message in messages %}
+        {{message}}
+    {% endfor %}
+    {% endif %}
+{% comment %} <center>
+    <form action="" method='post'>
+        {% csrf_token %}
+        {{formset.management_form}}
+        {% for form in form %}
+            {{ form.as_table }}
+        {% endfor %}
+        <button type='submit'>Submit</button>
+    </form>
+</center> {% endcomment %}
+<form action="" method='post'>
+<table width='100'>
+    {% csrf_token %}
+    {{formset.management_form}}
+    <tr>
+        {% for form in formset.forms.0 %}
+        <th> {{ form.label }} </th>
+        {% endfor %}
+    </tr>
+    {% for form in formset %}
+    <tr>
+    {% for form in form %}
+    <td> {{form}} </td>
+    {% endfor %}
+</tr>
+{% endfor %}
+</table>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
